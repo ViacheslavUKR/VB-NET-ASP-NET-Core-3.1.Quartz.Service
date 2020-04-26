@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>QuartzTest1</Name>
+    <Description>VB.NET ASP.NET Core 3.1 Quartz bazed service project template for VS2019</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>QuartzTest1</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
+	<LanguageTag>VB</LanguageTag>
+	<PlatformTag>Windows</PlatformTag>
+	<PlatformTag>Linux</PlatformTag>
+	<ProjectTypeTag>Service</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="QuartzTest1.vbproj" File="QuartzTest1.vbproj" ReplaceParameters="true">
+      <Folder Name="My Project" TargetFolderName="My Project">
+        <ProjectItem ReplaceParameters="false" TargetFileName="app.manifest">app.manifest</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot" />
+      <Folder Name="Jobs" TargetFolderName="Jobs">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HelloJob.vb">HelloJob.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="JobFactory.vb">JobFactory.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="JobSchedule.vb">JobSchedule.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="QuartzHostedService.vb">QuartzHostedService.vb</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="asp_net_core_3_1_vb_GDH_icon.ico">asp_net_core_3_1_vb_GDH_icon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.vb">Program.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.vb">Startup.vb</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
